@@ -1,0 +1,22 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+class Promocion extends Model
+{
+    use HasFactory;
+
+    protected $table = 'Promoción';
+    protected $primaryKey = 'PromociónID';
+    public $timestamps = false;
+
+    protected $fillable = [
+        'Nombre',
+        'Codigo',
+        'Descuento',
+        'Estado',
+    ];
+}
